@@ -1,0 +1,57 @@
+{% load static %}
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+<script src="https://kit.fontawesome.com/5d11a0e222.js" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<title> </title>
+</head>
+<body>
+    <div class="main-container d-flex">
+        <div class="sidebar" id="side_nav">
+            <div class="cancel-item" >
+                <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <img src="{% static 'images/pro_pic.jpg' %}" alt="" class="profile-image">
+            <div class="personal-details">
+                <p>MRIGANKA PAUL</p>
+                <a style="padding-left:10px" href="" class="text-decoration-none "><i class="fa-regular fa-envelope px-3 py-2"></i> paulmriganka707@gmail.com</a>
+                <a style="padding-left:10px" href="" class="text-decoration-none "><i class="fa-regular fa-phone px-3 py-2"></i> 8861446898 / 9007334107</a>
+            </div>    
+            <div class="side-block">
+                <a style="padding-left:25px" href="https://www.linkedin.com/in/mriganka-paul-05049097/" target='_blank'><i class="fa-brands fa-linkedin px-3 py-2"></i></a>
+                <a href="https://example.com"><i class="fa-brands fa-square-twitter px-3 py-2"></i></a>
+                <a href="https://www.facebook.com/mriganka.paul.3"><i class="fa-brands fa-square-facebook px-3 py-2"></i></a>
+            </div>
+            <ul class="list-unstyled px-2">
+                <li class=""><a href="index" class="text-decoration-none "><i style="padding-left:25px" class="fa fa-sharp fa-regular fa-house px-3 py-2"></i> HOME</a></li>
+                <li class=""><a href="experience" class="text-decoration-none "><i class="fa fa-regular fa-briefcase px-3 py-2"></i> EXPERIENCE</a></li>
+                <li class=""><a href="awards" class="text-decoration-none "><i class="fa fa-regular fa-award px-3 py-2"></i> AWARDS</a></li>
+                <li class=""><a href="contact" class="text-decoration-none "><i class="fa-sharp fa-regular fa-address-book px-3 py-2"></i> CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="main-content" id="main">
+            <img src="{% static 'images/icons8-xbox-menu-64.png' %}" alt="" class="menu-list" onclick="openNav()">
+            
+            {% block content %}
+            {% endblock %}  
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("side_nav").style.width = "250px";
+          
+        }
+        function closeNav() {
+          document.getElementById("side_nav").style.width = "0";
+         
+        }
+    </script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+</body>
+</html>

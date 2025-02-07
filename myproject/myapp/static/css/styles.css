@@ -1,0 +1,155 @@
+body {
+  background: #ffffffe5;
+}
+
+.sidebar {
+  background: #000;
+  width: 250px;
+  transition: 0.5s;
+  height: 100vh
+  }
+
+.main-content {
+    min-height: 100vh;
+    width: 100%
+  }
+
+.sidebar li.active {
+  background: #eee;
+  border-radius: 15px;
+
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+  background: #000;
+}
+
+.sidebar li a {
+  color: #eee;
+  display: block;
+  padding: 20px 10px 10px 10px;
+}
+
+.sidebar i {
+  color: #eee;
+}
+
+.menu-list{
+  position: fixed;
+  top: 0px;
+  right: 0px
+}
+
+.side-block {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cancel-item {
+  margin: 5px 5px 5px 180px 
+}  
+
+.profile-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.personal-details p {
+  color: #eee;
+  display: block;
+  font-size: large;
+  margin-left: 30px;
+}
+
+.personal-details  a {
+  color: #eee;
+  display: block;
+  font-size: x-small;
+}
+
+
+
+
+
+
+
+.container-contact {
+    width: 100%;
+    min-height: 100vh;
+    background: #575555;
+}
+.wrap-contact {
+    width: 1200px;
+    background: #a79b9b;
+    min-height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 30px
+}
+.contact-form-title {
+  width: 100%;
+  display: block;
+  font-family: Poppins-Regular;
+  font-size: 30px;
+  color: #333;
+  line-height: 1.2;
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+.contact-form {
+  width: 55%;
+  padding: 25px
+}
+.contact-form-more {
+  width: 45%;
+  background-color: #462b2b;
+  padding: 30px
+}
+
+.txt1 {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+
+}
+.txt2 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d3ced3;
+}
+.award-image {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px
+}
+.awards-form-more {
+  width: 100%;
+  background-color: #462b2b;
+  padding: 30px
+}
+.awards-heading {
+  color: #fff;
+}
+
+#carouselExample {
+  margin-top: 5%;
+}
+
+.experience-form-more {
+  width: 100%;
+  background-color: #462b2b;
+  padding: 30px
+}
+
+.experience-details {
+  color: #fff;
+}

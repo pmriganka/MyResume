@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container-contact">
+        <div class="wrap-contact">
+            <form class="contact-form" method="POST" action="/contact">
+                {% csrf_token %}
+                <span class="contact-form-title"> Drop A Note !</span>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="fullname">Name</label>
+                  <input type="text" id="fullname" name="fullname" class="form-control" />
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="email">Email address</label>
+                  <input type="email" id="email" name="email" class="form-control" />
+                </div>
+
+                 <!-- Contact input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="contact">Contact No</label>
+                    <input type="text" id="contact" name="contact" class="form-control" />
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                </div>
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+            </form>
+            
+            <div class="contact-form-more flex-col-c-m">
+                <div class="flex-col size2 px-5">
+                    <span class="txt1 p-b-20 py-4"> Address </span>    
+                    <span class="txt2"> 32/2 K.K.ROY CHOUDHURY ROAD ,</span>
+                    <br> 
+                    <span class="txt2"> P.O - BARISHA, </span>
+                    <br>
+                    <span class="txt2"> KOLKATA - 700008</span>
+                    <br>
+                    <span class="txt2"> WEST BENGAL, INDIA</span>    
+                </div>
+                <div class="flex-col size2 px-5">
+                    <span class="txt1 p-b-20 py-4"> Contact </span>    
+                    <span class="txt2"> 8861446898</span>
+                    <br>
+                    <span class="txt2"> 9007334107</span>  
+                    
+                </div>
+                <div class="flex-col size2 px-5">
+                    <span class="txt1 p-b-20 py-4"> Email  </span>    
+                    <span class="txt2"> paulmriganka707@gmail.com </span>
+                    <br>
+                    <span class="txt2"> mrigankap707@gmail.com </span>   
+                </div>
+                <div class="flex-col size2 px-5">
+                    <span class="txt1 p-b-20 py-4"> Date of Birth  </span>    
+                    <span class="txt2"> 19th JULY , 1988 </span>   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

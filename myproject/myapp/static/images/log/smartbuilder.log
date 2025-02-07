@@ -1,0 +1,2 @@
+2023-05-02 01:35:51 [Timer-1] INFO  o.a.http.impl.execchain.RetryExec - I/O exception (java.net.SocketException) caught when processing request to {s}->https://vmabglprd01.isus.emc.com:443: Software caused connection abort: recv failed
+2023-05-02 01:35:51 [Timer-1] INFO  o.a.http.impl.execchain.RetryExec - Retrying request to {s}->https://vmabglprd01.isus.emc.com:443

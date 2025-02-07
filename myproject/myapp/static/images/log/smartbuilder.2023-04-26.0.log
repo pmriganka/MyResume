@@ -1,0 +1,3 @@
+2023-04-26 12:33:42 [main] INFO  com.emc.smartbuilder.SBApp - Starting SBApp v10.0.22 on W105SP3573 with PID 10948 (C:\Users\paulm5\Desktop\MY ENCYCLO\DJANGO\my_ultimate_cv\myfinalresume\static\images\smartbuilder.jar started by paulm5 in C:\Users\paulm5\Desktop\MY ENCYCLO\DJANGO\my_ultimate_cv\myfinalresume\static\images)
+2023-04-26 12:33:42 [main] INFO  com.emc.smartbuilder.SBApp - The following profiles are active: prod
+2023-04-26 12:33:43 [main] INFO  com.emc.smartbuilder.SBApp - Started SBApp in 1.598 seconds (JVM running for 2.678)
